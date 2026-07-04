@@ -1,21 +1,21 @@
 <!-- ============================================================
-     PRECISION LASH & BROW — NAIL SERVICES SECTION
+     PRECISION LASH & BROW — HANDS & FEET COLLECTION (Nail Services)
      How to add in Wix:
        1. In the Wix Editor, open your Services page.
        2. Click (+) Add Elements  →  Embed Code  →  Embed HTML.
-       3. Drag the HTML box where you want the nails section,
-          click "Enter Code", and paste this ENTIRE file.
-       4. Stretch the box full-width and set its height to fit
-          (roughly 900–1100px on desktop).
+       3. Drag the HTML box where you want the section, click
+          "Enter Code", and paste this ENTIRE file.
+       4. Stretch the box full-width and set the height to fit
+          (roughly 3200–3600px on desktop — adjust until nothing is cut off).
      To swap in your own photos later:
        - Upload your nail photos to Wix Media, copy each image URL,
-        and replace the src="https://placehold.co/..." lines below.
-     To change prices/durations/booking link:
-       - Edit the marked lines — everything is plain text.
+         and replace the src="https://placehold.co/..." lines below.
+     To change the booking link:
+       - Search for "fresha.com" and replace every href with your link.
      ============================================================ -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
   .plb-nails * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -23,11 +23,11 @@
     font-family: 'Jost', 'Helvetica Neue', Arial, sans-serif;
     background: #faf7f4;
     color: #3b3430;
-    padding: 64px 24px;
+    padding: 64px 24px 72px;
   }
   .plb-nails .plb-inner { max-width: 1100px; margin: 0 auto; }
 
-  /* Section heading */
+  /* ---------- Header ---------- */
   .plb-nails .plb-eyebrow {
     text-align: center;
     letter-spacing: 0.35em;
@@ -40,24 +40,40 @@
   .plb-nails h2 {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 600;
-    font-size: clamp(32px, 4vw, 46px);
+    font-size: clamp(34px, 4.5vw, 50px);
     text-align: center;
     color: #2e2a27;
   }
-  .plb-nails .plb-sub {
+  .plb-nails .plb-tagline {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
     text-align: center;
-    max-width: 560px;
-    margin: 16px auto 48px;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #6d635c;
+    font-size: 20px;
+    color: #8a7264;
+    margin: 10px auto 0;
   }
 
-  /* Card grid */
+  /* ---------- Category headings ---------- */
+  .plb-nails .plb-cat {
+    text-align: center;
+    margin: 64px 0 32px;
+  }
+  .plb-nails .plb-cat h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(26px, 3vw, 34px);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #2e2a27;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9c6ba;
+  }
+
+  /* ---------- Service cards ---------- */
   .plb-nails .plb-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 28px;
   }
   .plb-nails .plb-card {
@@ -66,6 +82,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
     transition: box-shadow 0.25s ease, transform 0.25s ease;
   }
   .plb-nails .plb-card:hover {
@@ -74,44 +91,64 @@
   }
   .plb-nails .plb-card img {
     width: 100%;
-    height: 210px;
+    height: 220px;
     object-fit: cover;
     display: block;
   }
+  .plb-nails .plb-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(255, 255, 255, 0.94);
+    color: #8a7264;
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border: 1px solid #eadfd6;
+  }
   .plb-nails .plb-card-body {
-    padding: 22px 22px 26px;
+    padding: 24px 24px 26px;
     display: flex;
     flex-direction: column;
     flex: 1;
   }
-  .plb-nails h3 {
+  .plb-nails h4 {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 600;
     font-size: 24px;
+    line-height: 1.25;
     color: #2e2a27;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+  }
+  .plb-nails .plb-meta-line {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #a09488;
+    margin-bottom: 14px;
+  }
+  .plb-nails .plb-meta-line strong {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 21px;
+    letter-spacing: 0;
+    color: #b98a7a;
+    margin-right: 8px;
   }
   .plb-nails .plb-desc {
     font-weight: 300;
     font-size: 14.5px;
-    line-height: 1.65;
+    line-height: 1.7;
     color: #6d635c;
     flex: 1;
   }
-  .plb-nails .plb-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin: 18px 0 16px;
-    padding-top: 14px;
-    border-top: 1px solid #f0e7df;
-  }
-  .plb-nails .plb-time { font-size: 13px; letter-spacing: 0.06em; color: #a09488; }
-  .plb-nails .plb-price {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: #b98a7a;
+  .plb-nails .plb-desc + .plb-desc { margin-top: 10px; }
+  .plb-nails .plb-note {
+    margin-top: 12px;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: #8a7264;
   }
   .plb-nails .plb-book {
     display: block;
@@ -124,94 +161,299 @@
     letter-spacing: 0.22em;
     text-transform: uppercase;
     padding: 13px 10px;
+    margin-top: 20px;
     transition: background 0.25s ease;
   }
   .plb-nails .plb-book:hover { background: #b98a7a; }
+
+  /* ---------- Enhancement cards (price rows inside) ---------- */
+  .plb-nails .plb-rows { margin-top: 4px; }
+  .plb-nails .plb-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 9px 0;
+    border-bottom: 1px dotted #e6d9cf;
+    font-size: 14.5px;
+  }
+  .plb-nails .plb-row:last-child { border-bottom: none; }
+  .plb-nails .plb-row span:first-child { font-weight: 400; color: #4c443e; }
+  .plb-nails .plb-row span:last-child {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: #b98a7a;
+    white-space: nowrap;
+  }
+
+  /* ---------- Add-on panels ---------- */
+  .plb-nails .plb-addons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+  }
+  .plb-nails .plb-panel {
+    background: #ffffff;
+    border: 1px solid #eee4dc;
+    padding: 26px 26px 22px;
+  }
+  .plb-nails .plb-panel h5 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: 21px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #2e2a27;
+    margin-bottom: 6px;
+  }
+  .plb-nails .plb-panel .plb-panel-sub {
+    font-size: 13px;
+    font-weight: 300;
+    color: #a09488;
+    margin-bottom: 10px;
+  }
+
+  /* ---------- Loyalty banner ---------- */
+  .plb-nails .plb-loyalty {
+    margin-top: 64px;
+    background: #2e2a27;
+    color: #f4ece5;
+    text-align: center;
+    padding: 48px 32px;
+  }
+  .plb-nails .plb-loyalty h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(24px, 3vw, 32px);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #e3c9b8;
+    margin-bottom: 14px;
+  }
+  .plb-nails .plb-loyalty p {
+    max-width: 640px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 15.5px;
+    line-height: 1.8;
+    color: #d9cfc6;
+  }
 </style>
 
 <section class="plb-nails">
   <div class="plb-inner">
 
-    <p class="plb-eyebrow">New at Precision</p>
-    <h2>Nail Services</h2>
-    <p class="plb-sub">
-      Meticulous manicures and pedicures with the same precision and care
-      you trust for your lashes and brows. Clean, modern, and always polished.
-    </p>
+    <!-- ==================== HEADER ==================== -->
+    <p class="plb-eyebrow">Precision Spa Experience</p>
+    <h2>Hands &amp; Feet Collection</h2>
+    <p class="plb-tagline">Where refinement meets care</p>
 
+    <!-- ==================== PEDICURE ==================== -->
+    <div class="plb-cat"><h3>Pedicure</h3></div>
     <div class="plb-grid">
 
-      <!-- CARD 1 · Classic Manicure -->
+      <!-- Signature Sole Revival -->
       <div class="plb-card">
+        <span class="plb-badge">✨ Signature Experience</span>
         <!-- REPLACE with your photo: paste your Wix image URL into src -->
-        <img src="https://placehold.co/600x420/e9dcd3/8a7264?text=Classic+Manicure" alt="Classic manicure">
+        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Signature+Sole+Revival" alt="Precision Signature Sole Revival pedicure">
         <div class="plb-card-body">
-          <h3>Classic Manicure</h3>
-          <p class="plb-desc">Nail shaping, cuticle care, a relaxing hand massage, and a flawless polish finish.</p>
-          <div class="plb-meta">
-            <span class="plb-time">45 min</span>
-            <span class="plb-price">$40</span> <!-- EDIT price -->
+          <h4>Precision Signature Sole Revival</h4>
+          <p class="plb-meta-line"><strong>$145</strong> 60–75 min</p>
+          <p class="plb-desc">A complete luxury foot renewal designed to restore, relax, and revive from heel to toe. This elevated treatment includes an aromatic soak, precision nail shaping, detailed cuticle care, intensive heel therapy, exfoliation, a hydrating mask, warm paraffin treatment, a heated eye mask, and a soothing neck wrap, followed by a 25-minute extended relaxing massage.</p>
+          <p class="plb-note">Finish with your choice of polish. Gel polish upgrade included at no additional cost.</p>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Velvet Foot Refresh -->
+      <div class="plb-card">
+        <span class="plb-badge">💕 Guest Favorite</span>
+        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Velvet+Foot+Refresh" alt="Precision Velvet Foot Refresh pedicure">
+        <div class="plb-card-body">
+          <h4>Precision Velvet Foot Refresh</h4>
+          <p class="plb-meta-line"><strong>$120</strong> 60 min</p>
+          <p class="plb-desc">A deeply soothing foot care experience designed to restore softness, comfort, and natural renewal. This treatment includes an aromatic soak, nail shaping, cuticle care, heel smoothing, gentle exfoliation, a nourishing mask, and a 15-minute relaxing massage.</p>
+          <p class="plb-note">Finish with your choice of polish. Gel polish upgrade included.</p>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Revival Foot Care -->
+      <div class="plb-card">
+        <span class="plb-badge">✅ Recommended</span>
+        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Revival+Foot+Care" alt="Precision Revival Foot Care pedicure">
+        <div class="plb-card-body">
+          <h4>Precision Revival Foot Care</h4>
+          <p class="plb-meta-line"><strong>$105</strong> 60 min</p>
+          <p class="plb-desc">A gentle maintenance foot care experience designed to keep feet clean, soft, and healthy. This treatment includes a warm soak, nail shaping, cuticle care, heel smoothing, light exfoliation, a hydrating treatment, and a 10-minute relaxing massage.</p>
+          <p class="plb-note">Finish with your choice of polish. Gel polish upgrade included.</p>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Fresh Touch -->
+      <div class="plb-card">
+        <span class="plb-badge">Meticulous Care</span>
+        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Fresh+Touch" alt="Precision Fresh Touch pedicure">
+        <div class="plb-card-body">
+          <h4>Precision Fresh Touch</h4>
+          <p class="plb-meta-line"><strong>$69</strong> 45 min</p>
+          <p class="plb-desc">A refreshing pedicure focused on essential care and clean, polished results. This treatment includes an aromatic essential oil foot soak, nail shaping, cuticle care, heel cleansing, and a relaxing massage.</p>
+          <p class="plb-note">Finish with your choice of polish.</p>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==================== HAND CARE ==================== -->
+    <div class="plb-cat"><h3>Hand Care Services</h3></div>
+    <div class="plb-grid">
+
+      <!-- Velvet Hands Spa -->
+      <div class="plb-card">
+        <span class="plb-badge">✨ Best Choice</span>
+        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Velvet+Hands+Spa" alt="Precision Velvet Hands Spa manicure">
+        <div class="plb-card-body">
+          <h4>Precision Velvet Hands Spa</h4>
+          <p class="plb-meta-line"><strong>$79</strong> 60 min · Radiance Renewal Premium Care</p>
+          <p class="plb-desc">A restorative hand experience designed to nourish, soften, and deeply relax the skin. Includes nail care, cuticle refinement, exfoliation, hydrating mask, warm paraffin therapy, and a slow massage.</p>
+          <p class="plb-note">Finish with polish of choice. Gel upgrade included.</p>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Radiance Renewal Manicure -->
+      <div class="plb-card">
+        <span class="plb-badge">💕 Most Popular</span>
+        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Radiance+Renewal" alt="Precision Radiance Renewal Manicure">
+        <div class="plb-card-body">
+          <h4>Precision Radiance Renewal Manicure</h4>
+          <p class="plb-meta-line"><strong>$69</strong> 45 min</p>
+          <p class="plb-desc">A revitalizing manicure experience designed to awaken natural glow, smooth texture, and restore a luminous, healthy finish to the hands. Includes nail shaping, cuticle refinement, light removal if needed, and a relaxing massage.</p>
+          <p class="plb-note">Finish with polish of choice. Gel upgrade included.</p>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==================== BESPOKE NAIL ENHANCEMENT ==================== -->
+    <div class="plb-cat"><h3>Bespoke Nail Enhancement</h3></div>
+    <div class="plb-grid">
+
+      <!-- Dipping Powder – Natural Nails -->
+      <div class="plb-card">
+        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Dipping+Powder" alt="Dipping powder on natural nails">
+        <div class="plb-card-body">
+          <h4>✨ Dipping Powder — Natural Nails</h4>
+          <p class="plb-desc">A durable and lightweight powder enhancement applied on natural nails for strength, protection, and a clean natural finish. Soak off &amp; complete nail renewal covers full removal and fresh reapplication when needed, including safe soak off.</p>
+          <div class="plb-rows">
+            <div class="plb-row"><span>Dipping Powder – Natural Nails</span><span>$60</span></div>
+            <div class="plb-row"><span>Soak Off &amp; Complete Nail Renewal</span><span>$65</span></div>
           </div>
           <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
         </div>
       </div>
 
-      <!-- CARD 2 · Gel Manicure -->
+      <!-- Dipping Powder – Extensions -->
       <div class="plb-card">
-        <img src="https://placehold.co/600x420/e9dcd3/8a7264?text=Gel+Manicure" alt="Gel manicure">
+        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Dip+Extensions" alt="Dipping powder extensions">
         <div class="plb-card-body">
-          <h3>Gel Manicure</h3>
-          <p class="plb-desc">Long-lasting, chip-resistant gel color with a high-shine cure — perfect for 2–3 weeks of wear.</p>
-          <div class="plb-meta">
-            <span class="plb-time">60 min</span>
-            <span class="plb-price">$55</span> <!-- EDIT price -->
+          <h4>✨ Dipping Powder — Extensions</h4>
+          <p class="plb-desc">A sculpted dipping powder service designed to extend the natural nail length while maintaining a lightweight and natural appearance. Soak off &amp; complete nail renewal covers full removal and fresh reapplication when switching or renewing the set.</p>
+          <div class="plb-rows">
+            <div class="plb-row"><span>Dipping Powder – Extensions</span><span>$65</span></div>
+            <div class="plb-row"><span>Soak Off &amp; Complete Nail Renewal</span><span>$65</span></div>
           </div>
           <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
         </div>
       </div>
 
-      <!-- CARD 3 · Classic Pedicure -->
+      <!-- Gel-X Extensions -->
       <div class="plb-card">
-        <img src="https://placehold.co/600x420/e9dcd3/8a7264?text=Classic+Pedicure" alt="Classic pedicure">
+        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Gel-X+Extensions" alt="Gel-X nail extensions">
         <div class="plb-card-body">
-          <h3>Classic Pedicure</h3>
-          <p class="plb-desc">A soothing soak, exfoliation, callus care, massage, and polish for perfectly groomed feet.</p>
-          <div class="plb-meta">
-            <span class="plb-time">50 min</span>
-            <span class="plb-price">$50</span> <!-- EDIT price -->
+          <h4>✨ Gel-X Extensions</h4>
+          <p class="plb-desc">A lightweight extension system designed for natural, flexible, and comfortable wear with a clean modern finish. Soak off &amp; complete nail renewal professionally and safely removes your existing enhancement — includes complete nail preparation, cuticle care, and a renewed application for beautiful, long-lasting results.</p>
+          <div class="plb-rows">
+            <div class="plb-row"><span>Full Set</span><span>$70</span></div>
+            <div class="plb-row"><span>Refill</span><span>$65</span></div>
+            <div class="plb-row"><span>Soak Off &amp; Complete Nail Renewal</span><span>$80</span></div>
           </div>
           <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
         </div>
       </div>
 
-      <!-- CARD 4 · Gel Pedicure -->
+      <!-- Builder Gel -->
       <div class="plb-card">
-        <img src="https://placehold.co/600x420/e9dcd3/8a7264?text=Gel+Pedicure" alt="Gel pedicure">
+        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Builder+Gel" alt="Builder gel enhancement">
         <div class="plb-card-body">
-          <h3>Gel Pedicure</h3>
-          <p class="plb-desc">Our classic pedicure elevated with durable gel polish that keeps its shine for weeks.</p>
-          <div class="plb-meta">
-            <span class="plb-time">65 min</span>
-            <span class="plb-price">$65</span> <!-- EDIT price -->
-          </div>
-          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
-        </div>
-      </div>
-
-      <!-- CARD 5 · Nail Art Add-On -->
-      <div class="plb-card">
-        <img src="https://placehold.co/600x420/e9dcd3/8a7264?text=Nail+Art" alt="Nail art">
-        <div class="plb-card-body">
-          <h3>Nail Art Add-On</h3>
-          <p class="plb-desc">Hand-painted accents, French tips, chrome, and custom designs — priced per look.</p>
-          <div class="plb-meta">
-            <span class="plb-time">15+ min</span>
-            <span class="plb-price">From $10</span> <!-- EDIT price -->
+          <h4>✨ Builder Gel</h4>
+          <p class="plb-desc">A strengthening enhancement designed to support natural nail growth while adding structure and durability. Soak off &amp; complete nail renewal restores and refreshes your nails — includes professional soak-off, nail refinement, and Builder Gel application tailored to your desired look.</p>
+          <div class="plb-rows">
+            <div class="plb-row"><span>Full Set</span><span>$70</span></div>
+            <div class="plb-row"><span>Refill</span><span>$65</span></div>
+            <div class="plb-row"><span>Soak Off &amp; Complete Nail Renewal</span><span>$85</span></div>
           </div>
           <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
         </div>
       </div>
 
     </div>
+
+    <!-- ==================== ADD-ONS & UPGRADES ==================== -->
+    <div class="plb-cat"><h3>Add-Ons &amp; Upgrades</h3></div>
+    <div class="plb-addons">
+
+      <div class="plb-panel">
+        <h5>💫 Precision Nail Art Add-Ons</h5>
+        <p class="plb-panel-sub">A modern, high-shine luxury look for any set</p>
+        <div class="plb-rows">
+          <div class="plb-row"><span>Cat Eye or Chrome Finish</span><span>$20</span></div>
+          <div class="plb-row"><span>French</span><span>$10</span></div>
+          <div class="plb-row"><span>Deep French</span><span>$15</span></div>
+          <div class="plb-row"><span>Nail Repair (per nail)</span><span>$10</span></div>
+        </div>
+      </div>
+
+      <div class="plb-panel">
+        <h5>Removal Service</h5>
+        <p class="plb-panel-sub">Enhancement removal</p>
+        <div class="plb-rows">
+          <div class="plb-row"><span>Standalone Removal</span><span>$25</span></div>
+          <div class="plb-row"><span>Removal with Service</span><span>$12</span></div>
+        </div>
+      </div>
+
+      <div class="plb-panel">
+        <h5>Relaxation Add-Ons</h5>
+        <p class="plb-panel-sub">Extend the moment</p>
+        <div class="plb-rows">
+          <div class="plb-row"><span>Extended Hand Massage (10 min)</span><span>$20</span></div>
+          <div class="plb-row"><span>Extended Foot Massage (10 min)</span><span>$25</span></div>
+        </div>
+      </div>
+
+      <div class="plb-panel">
+        <h5>Skin &amp; Treatment Upgrades</h5>
+        <p class="plb-panel-sub">Targeted care, deeper results</p>
+        <div class="plb-rows">
+          <div class="plb-row"><span>Paraffin Deep Hydration (Hands or Feet)</span><span>$15</span></div>
+          <div class="plb-row"><span>Intensive Heel Repair Boost</span><span>$25</span></div>
+          <div class="plb-row"><span>Detox Clay Mask</span><span>$15</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==================== LOYALTY ==================== -->
+    <div class="plb-loyalty">
+      <h3>💎 The Precision Privilege</h3>
+      <p>Because exceptional guests deserve exceptional rewards. Earn a loyalty stamp with every full service and enjoy exclusive enhancements, seasonal indulgences, and surprise privileges throughout your journey with us.</p>
+    </div>
+
   </div>
 </section>

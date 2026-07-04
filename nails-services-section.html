@@ -1,0 +1,217 @@
+<!-- ============================================================
+     PRECISION LASH & BROW — NAIL SERVICES SECTION
+     How to add in Wix:
+       1. In the Wix Editor, open your Services page.
+       2. Click (+) Add Elements  →  Embed Code  →  Embed HTML.
+       3. Drag the HTML box where you want the nails section,
+          click "Enter Code", and paste this ENTIRE file.
+       4. Stretch the box full-width and set its height to fit
+          (roughly 900–1100px on desktop).
+     To swap in your own photos later:
+       - Upload your nail photos to Wix Media, copy each image URL,
+        and replace the src="https://placehold.co/..." lines below.
+     To change prices/durations/booking link:
+       - Edit the marked lines — everything is plain text.
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  .plb-nails * { margin: 0; padding: 0; box-sizing: border-box; }
+  .plb-nails {
+    font-family: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+    background: #faf7f4;
+    color: #3b3430;
+    padding: 64px 24px;
+  }
+  .plb-nails .plb-inner { max-width: 1100px; margin: 0 auto; }
+
+  /* Section heading */
+  .plb-nails .plb-eyebrow {
+    text-align: center;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: #b98a7a;
+    margin-bottom: 12px;
+  }
+  .plb-nails h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(32px, 4vw, 46px);
+    text-align: center;
+    color: #2e2a27;
+  }
+  .plb-nails .plb-sub {
+    text-align: center;
+    max-width: 560px;
+    margin: 16px auto 48px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #6d635c;
+  }
+
+  /* Card grid */
+  .plb-nails .plb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 28px;
+  }
+  .plb-nails .plb-card {
+    background: #ffffff;
+    border: 1px solid #eee4dc;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+  }
+  .plb-nails .plb-card:hover {
+    box-shadow: 0 14px 34px rgba(80, 60, 45, 0.12);
+    transform: translateY(-3px);
+  }
+  .plb-nails .plb-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+  }
+  .plb-nails .plb-card-body {
+    padding: 22px 22px 26px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .plb-nails h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #2e2a27;
+    margin-bottom: 8px;
+  }
+  .plb-nails .plb-desc {
+    font-weight: 300;
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: #6d635c;
+    flex: 1;
+  }
+  .plb-nails .plb-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 18px 0 16px;
+    padding-top: 14px;
+    border-top: 1px solid #f0e7df;
+  }
+  .plb-nails .plb-time { font-size: 13px; letter-spacing: 0.06em; color: #a09488; }
+  .plb-nails .plb-price {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #b98a7a;
+  }
+  .plb-nails .plb-book {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #2e2a27;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding: 13px 10px;
+    transition: background 0.25s ease;
+  }
+  .plb-nails .plb-book:hover { background: #b98a7a; }
+</style>
+
+<section class="plb-nails">
+  <div class="plb-inner">
+
+    <p class="plb-eyebrow">New at Precision</p>
+    <h2>Nail Services</h2>
+    <p class="plb-sub">
+      Meticulous manicures and pedicures with the same precision and care
+      you trust for your lashes and brows. Clean, modern, and always polished.
+    </p>
+
+    <div class="plb-grid">
+
+      <!-- CARD 1 · Classic Manicure -->
+      <div class="plb-card">
+        <!-- REPLACE with your photo: paste your Wix image URL into src -->
+        <img src="https://placehold.co/600x420/e9dcd3/8a7264?text=Classic+Manicure" alt="Classic manicure">
+        <div class="plb-card-body">
+          <h3>Classic Manicure</h3>
+          <p class="plb-desc">Nail shaping, cuticle care, a relaxing hand massage, and a flawless polish finish.</p>
+          <div class="plb-meta">
+            <span class="plb-time">45 min</span>
+            <span class="plb-price">$40</span> <!-- EDIT price -->
+          </div>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+      <!-- CARD 2 · Gel Manicure -->
+      <div class="plb-card">
+        <img src="https://placehold.co/600x420/e9dcd3/8a7264?text=Gel+Manicure" alt="Gel manicure">
+        <div class="plb-card-body">
+          <h3>Gel Manicure</h3>
+          <p class="plb-desc">Long-lasting, chip-resistant gel color with a high-shine cure — perfect for 2–3 weeks of wear.</p>
+          <div class="plb-meta">
+            <span class="plb-time">60 min</span>
+            <span class="plb-price">$55</span> <!-- EDIT price -->
+          </div>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+      <!-- CARD 3 · Classic Pedicure -->
+      <div class="plb-card">
+        <img src="https://placehold.co/600x420/e9dcd3/8a7264?text=Classic+Pedicure" alt="Classic pedicure">
+        <div class="plb-card-body">
+          <h3>Classic Pedicure</h3>
+          <p class="plb-desc">A soothing soak, exfoliation, callus care, massage, and polish for perfectly groomed feet.</p>
+          <div class="plb-meta">
+            <span class="plb-time">50 min</span>
+            <span class="plb-price">$50</span> <!-- EDIT price -->
+          </div>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+      <!-- CARD 4 · Gel Pedicure -->
+      <div class="plb-card">
+        <img src="https://placehold.co/600x420/e9dcd3/8a7264?text=Gel+Pedicure" alt="Gel pedicure">
+        <div class="plb-card-body">
+          <h3>Gel Pedicure</h3>
+          <p class="plb-desc">Our classic pedicure elevated with durable gel polish that keeps its shine for weeks.</p>
+          <div class="plb-meta">
+            <span class="plb-time">65 min</span>
+            <span class="plb-price">$65</span> <!-- EDIT price -->
+          </div>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+      <!-- CARD 5 · Nail Art Add-On -->
+      <div class="plb-card">
+        <img src="https://placehold.co/600x420/e9dcd3/8a7264?text=Nail+Art" alt="Nail art">
+        <div class="plb-card-body">
+          <h3>Nail Art Add-On</h3>
+          <p class="plb-desc">Hand-painted accents, French tips, chrome, and custom designs — priced per look.</p>
+          <div class="plb-meta">
+            <span class="plb-time">15+ min</span>
+            <span class="plb-price">From $10</span> <!-- EDIT price -->
+          </div>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

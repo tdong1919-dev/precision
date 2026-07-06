@@ -16,9 +16,9 @@
        awkward in Wix, copy the <link> + <style> block plus ONE
        section into its own Embed HTML element — one embed per
        section stacks nicely and is easier to size.
-     To swap in your own photos:
-       - Upload photos to Wix Media, copy each image URL, and
-         replace the src="https://placehold.co/..." lines.
+     Photos: all images are hosted in your Wix Media library
+       (static.wixstatic.com). To change one, upload the new photo
+       to Wix Media, copy its URL, and replace the matching src.
      Booking links:
        - Every button points to your Fresha page. Find-and-replace
          "fresha.com" URLs to deep-link specific services.
@@ -136,6 +136,18 @@
     padding: 6px 12px;
     border: 1px solid #eadfd6;
     z-index: 1;
+  }
+  .plb-svc .plb-chip {
+    display: inline-block;
+    align-self: flex-start;
+    color: #8a7264;
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 5px 11px;
+    border: 1px solid #eadfd6;
+    margin-bottom: 12px;
   }
   .plb-svc .plb-card-body {
     padding: 24px 24px 26px;
@@ -287,7 +299,7 @@
       <div class="plb-card">
         <span class="plb-badge">Timeless</span>
         <!-- REPLACE with your photo -->
-        <img src="https://static.wixstatic.com/media/4c166c_2e412b8884874a218ea2ccc1a450ef44~mv2.jpg/v1/fill/w_1054,h_702,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4571.jpg" alt="Classic eyelash extensions">
+        <img src="https://static.wixstatic.com/media/4c166c_e3c8824cddd64af08b3c65c884335490~mv2.png" alt="Classic eyelash extensions">
         <div class="plb-card-body">
           <h4>Classic Full Set</h4>
           <p class="plb-meta-line"><strong>$195</strong> 1 hr 30 min</p>
@@ -301,7 +313,7 @@
 
       <div class="plb-card">
         <span class="plb-badge">💕 Most Popular</span>
-        <img src="https://static.wixstatic.com/media/4c166c_ef78f3c9181f42228c680718c589706b~mv2.jpg/v1/fill/w_991,h_661,al_c,q_85,enc_avif,quality_auto/IMG_4572.jpg" alt="Hybrid eyelash extensions">
+        <img src="https://static.wixstatic.com/media/4c166c_8d5e86347d21448c8407f8ce4c667915~mv2.png" alt="Hybrid eyelash extensions">
         <div class="plb-card-body">
           <h4>Hybrid Full Set</h4>
           <p class="plb-meta-line"><strong>$260</strong> 1 hr 30 min</p>
@@ -315,7 +327,7 @@
 
       <div class="plb-card">
         <span class="plb-badge">✨ Full Glam</span>
-        <img src="https://static.wixstatic.com/media/4c166c_08daac0aad1e49d5a1d9e90d97759f1c~mv2.jpg/v1/fill/w_1038,h_692,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4574.jpg" alt="Volume eyelash extensions">
+        <img src="https://static.wixstatic.com/media/4c166c_1181070c7d8a4e108bc785de25c6512e~mv2.png" alt="Volume eyelash extensions">
         <div class="plb-card-body">
           <h4>Volume Full Set</h4>
           <p class="plb-meta-line"><strong>$295</strong> 1 hr 30 min</p>
@@ -343,7 +355,7 @@
 
       <div class="plb-card">
         <span class="plb-badge">Natural Touch</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Mini+Set" alt="Mini lash set">
+        <img src="https://static.wixstatic.com/media/4c166c_7fbb29690dc8442f9a0ff2d31d2e3aee~mv2.png" alt="Mini lash set">
         <div class="plb-card-body">
           <h4>Mini Full Set</h4>
           <p class="plb-meta-line"><strong>$115</strong> 1 hr</p>
@@ -356,9 +368,8 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">Wide-Eyed Look</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Bottom+Lashes" alt="Bottom lash extensions">
         <div class="plb-card-body">
+          <span class="plb-chip">Wide-Eyed Look</span>
           <h4>Bottom Lash Extensions</h4>
           <p class="plb-desc">Bottom lash extensions are individual lashes applied to your lower lash line to enhance and define the eyes. They create a more balanced, wide-eyed look and are often paired with upper lash sets.</p>
           <div class="plb-rows">
@@ -388,7 +399,7 @@
 
       <div class="plb-card">
         <span class="plb-badge">Natural Curl</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Lash+Curl" alt="Lash lift">
+        <img src="https://static.wixstatic.com/media/4c166c_2304d8e120e24930bf06bc678dbada7f~mv2.png" alt="Lash lift">
         <div class="plb-card-body">
           <h4>Lash Curl (Lash Lift)</h4>
           <p class="plb-meta-line"><strong>$115</strong> 1 hr</p>
@@ -398,9 +409,8 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">✨ Best Value</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Lift+%2B+Tint" alt="Lash lift and tint package">
         <div class="plb-card-body">
+          <span class="plb-chip">✨ Best Value</span>
           <h4>Lash Curl + Tint Package</h4>
           <p class="plb-meta-line"><strong>$145</strong> 1 hr</p>
           <p class="plb-desc">A lash lift and tint enhances your natural lashes by curling them from the base and adding a dark tint for more definition. The lift gives your lashes a longer, lifted appearance — no mascara or extensions needed.</p>
@@ -409,9 +419,8 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">Depth &amp; Definition</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Lash+Tint" alt="Natural lash darkening">
         <div class="plb-card-body">
+          <span class="plb-chip">Depth &amp; Definition</span>
           <h4>Natural Lash Darkening (Lash Tint)</h4>
           <p class="plb-meta-line"><strong>$40</strong> 30 min</p>
           <p class="plb-desc">A quick, semi-permanent treatment that darkens your natural lashes from root to tip using a safe, specially formulated dye. It adds depth and definition without mascara.</p>
@@ -435,22 +444,11 @@
       <div class="plb-card">
         <span class="plb-badge">✨ Best Choice</span>
         <!-- REPLACE with your photo -->
-        <img src="https://static.wixstatic.com/media/4c166c_eea7932b18404588b388228211b08a80~mv2.jpg/v1/fill/w_1060,h_580,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/281FD827-D77B-4D73-A8E5-819B217800E3.jpg" alt="Brow lamination">
+        <img src="https://static.wixstatic.com/media/4c166c_e23583b66ed84028945b966966aa2b64~mv2.png" alt="Brow lamination">
         <div class="plb-card-body">
           <h4>Brow Lamination</h4>
           <p class="plb-meta-line"><strong>$179</strong> 30 min</p>
           <p class="plb-desc">Brow lamination is like a perm for your eyebrows. It smooths and lifts your natural brow hairs so they look fuller, more defined, and stay in place like a brushed-up, fluffy look. It helps fill in gaps for a polished finish.</p>
-          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
-        </div>
-      </div>
-
-      <div class="plb-card">
-        <span class="plb-badge">💕 Most Popular</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Brow+Wax" alt="Brow wax">
-        <div class="plb-card-body">
-          <h4>Brow Wax</h4>
-          <p class="plb-meta-line"><strong>$25</strong> 15 min</p>
-          <p class="plb-desc">Precision waxing to sculpt your ideal arch — clean, defined brows shaped for your unique features.</p>
           <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
         </div>
       </div>
@@ -462,6 +460,16 @@
           <h4>Brow Tint</h4>
           <p class="plb-meta-line"><strong>$45</strong> 15 min</p>
           <p class="plb-desc">A custom-blended tint that deepens and enriches your natural brow color for fuller-looking, beautifully defined brows that last up to four weeks.</p>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+      <div class="plb-card">
+        <div class="plb-card-body">
+          <span class="plb-chip">💕 Most Popular</span>
+          <h4>Brow Wax</h4>
+          <p class="plb-meta-line"><strong>$25</strong> 15 min</p>
+          <p class="plb-desc">Precision waxing to sculpt your ideal arch — clean, defined brows shaped for your unique features.</p>
           <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
         </div>
       </div>
@@ -523,7 +531,7 @@
 
       <div class="plb-card">
         <span class="plb-badge">Quick Refresh</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Mini+Facial" alt="Mini facial">
+        <img src="https://static.wixstatic.com/media/4c166c_8c9bdbaeb46140ec9b71d30950c6ce6c~mv2.jpeg" alt="Mini facial">
         <div class="plb-card-body">
           <h4>Mini Facial</h4>
           <p class="plb-meta-line"><strong>$85</strong> 30 min</p>
@@ -534,7 +542,7 @@
 
       <div class="plb-card">
         <span class="plb-badge">For Teens</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Teen+Facial" alt="Teen facial">
+        <img src="https://static.wixstatic.com/media/4c166c_93957b2209ed46e594f0ee814fd5b5ed~mv2.jpeg" alt="Teen facial">
         <div class="plb-card-body">
           <h4>Teen Facial</h4>
           <p class="plb-meta-line"><strong>$110</strong> 1 hr</p>
@@ -544,9 +552,19 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">Collagen Boost</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Express+Facial" alt="Express facial">
+        <span class="plb-badge">✨ Advanced Hydration</span>
+        <img src="https://static.wixstatic.com/media/4c166c_e189736a6b5b46349da5fc82c5b99804~mv2.png" alt="Hydrafacial treatment">
         <div class="plb-card-body">
+          <h4>Hydrafacial</h4>
+          <p class="plb-meta-line"><strong>$199</strong> 60 min</p> <!-- EDIT: not listed on Fresha — confirm price or remove -->
+          <p class="plb-desc">A multi-step resurfacing treatment that cleanses, exfoliates, extracts, and infuses skin with intensive serums — instantly plumper, glowing skin with no downtime.</p>
+          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
+        </div>
+      </div>
+
+      <div class="plb-card">
+        <div class="plb-card-body">
+          <span class="plb-chip">Collagen Boost</span>
           <h4>Express Facial</h4>
           <p class="plb-meta-line"><strong>$110</strong> 45 min</p>
           <p class="plb-desc">A rejuvenating treatment that stimulates collagen and elastin to improve firmness, elasticity, and radiance. Ideal for all skin types, especially for fine lines, wrinkles, and loss of firmness.</p>
@@ -555,9 +573,8 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">Deep Renewal</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Deep+Cleansing" alt="Deep cleansing facial">
         <div class="plb-card-body">
+          <span class="plb-chip">Deep Renewal</span>
           <h4>Deep Cleansing</h4>
           <p class="plb-meta-line"><strong>$120</strong> 1 hr</p>
           <p class="plb-desc">A results-driven facial focused on deep cleansing, exfoliation, hydration, and skin recovery. Perfect for congestion, dullness, breakouts, and textured skin. Includes a peptide foam cleanse and targeted treatment.</p>
@@ -566,9 +583,8 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">Instant Glow</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Dermaplaning" alt="Dermaplaning facial">
         <div class="plb-card-body">
+          <span class="plb-chip">Instant Glow</span>
           <h4>Dermaplaning</h4>
           <p class="plb-meta-line"><strong>$150</strong> 1 hr</p>
           <p class="plb-desc">Gentle exfoliation that removes dead skin and peach fuzz for an instantly smoother, brighter canvas — makeup glides on flawlessly.</p>
@@ -577,9 +593,8 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">Collagen Renewal</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Microneedling" alt="Microneedling treatment">
         <div class="plb-card-body">
+          <span class="plb-chip">Collagen Renewal</span>
           <h4>Microneedling</h4>
           <p class="plb-meta-line"><strong>$450</strong> 1 hr</p>
           <p class="plb-desc">Microneedling creates tiny punctures in the skin to boost collagen production, improving texture and firmness while reducing scars and fine lines.</p>
@@ -588,23 +603,11 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">Firm &amp; Lift</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=RF+Facial" alt="RF facial">
         <div class="plb-card-body">
+          <span class="plb-chip">Firm &amp; Lift</span>
           <h4>RF Facial</h4>
           <p class="plb-meta-line"><strong>$350</strong> 1 hr</p>
           <p class="plb-desc">Radio-frequency energy gently heats the deeper layers of the skin to stimulate collagen — firming, lifting, and tightening with zero downtime.</p>
-          <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
-        </div>
-      </div>
-
-      <div class="plb-card">
-        <span class="plb-badge">✨ Advanced Hydration</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Hydrafacial" alt="Hydrafacial treatment">
-        <div class="plb-card-body">
-          <h4>Hydrafacial</h4>
-          <p class="plb-meta-line"><strong>$199</strong> 60 min</p> <!-- EDIT: not listed on Fresha — confirm price or remove -->
-          <p class="plb-desc">A multi-step resurfacing treatment that cleanses, exfoliates, extracts, and infuses skin with intensive serums — instantly plumper, glowing skin with no downtime.</p>
           <a class="plb-book" href="https://www.fresha.com/a/precision-lash-brow-bethesda-4915-saint-elmo-avenue-n5mn6h4a" target="_blank" rel="noopener">Book Now</a>
         </div>
       </div>
@@ -713,7 +716,7 @@
 
       <div class="plb-card">
         <span class="plb-badge">✨ Signature Experience</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Ultrasonic+Lipo" alt="Ultrasonic lipo treatment">
+        <img src="https://static.wixstatic.com/media/4c166c_343d34fd3a9346f7841e00fc7a5943ff~mv2.png" alt="Ultrasonic lipo treatment">
         <div class="plb-card-body">
           <h4>Ultrasonic Lipo Treatment</h4>
           <p class="plb-meta-line"><strong>$350</strong> 1 hr</p>
@@ -723,9 +726,8 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">Sculpt &amp; Tone</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Cavitation" alt="Cavitation body contouring">
         <div class="plb-card-body">
+          <span class="plb-chip">Sculpt &amp; Tone</span>
           <h4>Cavitation</h4>
           <p class="plb-desc">Experience a revolutionary approach to body contouring that targets stubborn fat areas. Our cavitation treatment utilizes ultrasonic waves to help your body achieve a more sculpted silhouette.</p>
           <div class="plb-rows">
@@ -742,9 +744,8 @@
     <div class="plb-grid">
 
       <div class="plb-card">
-        <span class="plb-badge">Clear &amp; Calm</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Back+Facial" alt="Back acne facial">
         <div class="plb-card-body">
+          <span class="plb-chip">Clear &amp; Calm</span>
           <h4>Back Acne Facial</h4>
           <p class="plb-meta-line"><strong>$165</strong> 1 hr</p>
           <p class="plb-desc">Give your skin the care it deserves with a facial designed specifically for back acne. This soothing treatment targets impurities and helps promote a clearer complexion, leaving your skin smooth and refreshed.</p>
@@ -753,9 +754,8 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">Pure Relaxation</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Massage" alt="Relaxing massage">
         <div class="plb-card-body">
+          <span class="plb-chip">Pure Relaxation</span>
           <h4>Massage</h4>
           <p class="plb-meta-line"><strong>$165</strong> 1 hr</p>
           <p class="plb-desc">A personalized full-body massage designed to melt away tension, ease sore muscles, and restore a deep sense of calm and well-being.</p>
@@ -775,7 +775,7 @@
 
       <div class="plb-card">
         <span class="plb-badge">💕 Most Popular</span>
-        <img src="https://static.wixstatic.com/media/4c166c_0b98f2210d4a42f9bf15bd11c5d638cb~mv2.png/v1/crop/x_0,y_0,w_1024,h_1411/fill/w_508,h_698,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ChatGPT%20Image%20Jun%2016%2C%202025%20at%2006_07_35%20PM.png" alt="Microblading">
+        <img src="https://static.wixstatic.com/media/4c166c_3c732d99457343879c1b18806301aadb~mv2.png" alt="Microblading">
         <div class="plb-card-body">
           <h4>Microblading</h4>
           <p class="plb-meta-line"><strong>from $850</strong> 1 hr</p>
@@ -843,12 +843,13 @@
     <div class="plb-cat"><h3>Nails</h3></div>
     <p class="plb-cat-sub">Precision Spa Experience — Hands &amp; Feet Collection</p>
 
+    <img src="https://static.wixstatic.com/media/4c166c_06ac5a06829f4cc48e8b2f2b1ea61839~mv2.png" alt="Nail services" style="width:100%; height:300px; object-fit:cover; display:block; border:1px solid #eee4dc; margin-bottom:8px;">
+
     <!-- -------- Bespoke Nail Experience -------- -->
     <p class="plb-subcat">Bespoke Nail Experience</p>
     <div class="plb-grid">
 
       <div class="plb-card">
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Dipping+Powder" alt="Dipping powder on natural nails">
         <div class="plb-card-body">
           <h4>✨ Dipping Powder — Natural Nails</h4>
           <p class="plb-desc">A durable and lightweight powder enhancement applied on natural nails for strength, protection, and a clean natural finish. Soak off &amp; complete nail renewal covers full removal and fresh reapplication when needed, including safe soak off.</p>
@@ -861,7 +862,6 @@
       </div>
 
       <div class="plb-card">
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Dip+Extensions" alt="Dipping powder extensions">
         <div class="plb-card-body">
           <h4>✨ Dipping Powder — Extensions</h4>
           <p class="plb-desc">A sculpted dipping powder service designed to extend the natural nail length while maintaining a lightweight and natural appearance. Soak off &amp; complete nail renewal covers full removal and fresh reapplication when switching or renewing the set.</p>
@@ -874,7 +874,6 @@
       </div>
 
       <div class="plb-card">
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Gel-X+Extensions" alt="Gel-X nail extensions">
         <div class="plb-card-body">
           <h4>✨ Gel-X Extensions</h4>
           <p class="plb-desc">A lightweight extension system designed for natural, flexible, and comfortable wear with a clean modern finish. Soak off &amp; complete nail renewal professionally and safely removes your existing enhancement — includes complete nail preparation, cuticle care, and a renewed application for beautiful, long-lasting results.</p>
@@ -888,7 +887,6 @@
       </div>
 
       <div class="plb-card">
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Builder+Gel" alt="Builder gel enhancement">
         <div class="plb-card-body">
           <h4>✨ Builder Gel</h4>
           <p class="plb-desc">A strengthening enhancement designed to support natural nail growth while adding structure and durability. Soak off &amp; complete nail renewal restores and refreshes your nails — includes professional soak-off, nail refinement, and Builder Gel application tailored to your desired look.</p>
@@ -908,9 +906,8 @@
     <div class="plb-grid">
 
       <div class="plb-card">
-        <span class="plb-badge">✨ Best Choice</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Velvet+Hands+Spa" alt="Precision Velvet Hands Spa manicure">
         <div class="plb-card-body">
+          <span class="plb-chip">✨ Best Choice</span>
           <h4>Precision Velvet Hands Spa</h4>
           <p class="plb-meta-line"><strong>$79</strong> 60 min · Radiance Renewal Premium Care</p>
           <p class="plb-desc">A restorative hand experience designed to nourish, soften, and deeply relax the skin. Includes nail care, cuticle refinement, exfoliation, hydrating mask, warm paraffin therapy, and a slow massage.</p>
@@ -920,9 +917,8 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">💕 Most Popular</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Radiance+Renewal" alt="Precision Radiance Renewal Manicure">
         <div class="plb-card-body">
+          <span class="plb-chip">💕 Most Popular</span>
           <h4>Precision Radiance Renewal Manicure</h4>
           <p class="plb-meta-line"><strong>$69</strong> 45 min</p>
           <p class="plb-desc">A revitalizing manicure experience designed to awaken natural glow, smooth texture, and restore a luminous, healthy finish to the hands. Includes nail shaping, cuticle refinement, light removal if needed, and a relaxing massage.</p>
@@ -979,13 +975,12 @@
     </div>
     <!-- -------- Pedicure -------- -->
     <p class="plb-subcat">Pedicure</p>
+    <img src="https://static.wixstatic.com/media/4c166c_b3a49fe4818f4cc7b7bb9414460b3f60~mv2.png" alt="Pedicure" style="width:100%; height:300px; object-fit:cover; display:block; border:1px solid #eee4dc; margin-bottom:28px;">
     <div class="plb-grid">
 
       <div class="plb-card">
-        <span class="plb-badge">✨ Signature Experience</span>
-        <!-- REPLACE with your photo -->
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Signature+Sole+Revival" alt="Precision Signature Sole Revival pedicure">
         <div class="plb-card-body">
+          <span class="plb-chip">✨ Signature Experience</span>
           <h4>Precision Signature Sole Revival</h4>
           <p class="plb-meta-line"><strong>$145</strong> 60–75 min</p>
           <p class="plb-desc">A complete luxury foot renewal designed to restore, relax, and revive from heel to toe. This elevated treatment includes an aromatic soak, precision nail shaping, detailed cuticle care, intensive heel therapy, exfoliation, a hydrating mask, warm paraffin treatment, a heated eye mask, and a soothing neck wrap, followed by a 25-minute extended relaxing massage.</p>
@@ -995,9 +990,8 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">💕 Guest Favorite</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Velvet+Foot+Refresh" alt="Precision Velvet Foot Refresh pedicure">
         <div class="plb-card-body">
+          <span class="plb-chip">💕 Guest Favorite</span>
           <h4>Precision Velvet Foot Refresh</h4>
           <p class="plb-meta-line"><strong>$120</strong> 60 min</p>
           <p class="plb-desc">A deeply soothing foot care experience designed to restore softness, comfort, and natural renewal. This treatment includes an aromatic soak, nail shaping, cuticle care, heel smoothing, gentle exfoliation, a nourishing mask, and a 15-minute relaxing massage.</p>
@@ -1007,9 +1001,8 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">✅ Recommended</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Revival+Foot+Care" alt="Precision Revival Foot Care pedicure">
         <div class="plb-card-body">
+          <span class="plb-chip">✅ Recommended</span>
           <h4>Precision Revival Foot Care</h4>
           <p class="plb-meta-line"><strong>$105</strong> 60 min</p>
           <p class="plb-desc">A gentle maintenance foot care experience designed to keep feet clean, soft, and healthy. This treatment includes a warm soak, nail shaping, cuticle care, heel smoothing, light exfoliation, a hydrating treatment, and a 10-minute relaxing massage.</p>
@@ -1019,9 +1012,8 @@
       </div>
 
       <div class="plb-card">
-        <span class="plb-badge">Meticulous Care</span>
-        <img src="https://placehold.co/640x440/e9dcd3/8a7264?text=Fresh+Touch" alt="Precision Fresh Touch pedicure">
         <div class="plb-card-body">
+          <span class="plb-chip">Meticulous Care</span>
           <h4>Precision Fresh Touch</h4>
           <p class="plb-meta-line"><strong>$69</strong> 45 min</p>
           <p class="plb-desc">A refreshing pedicure focused on essential care and clean, polished results. This treatment includes an aromatic essential oil foot soak, nail shaping, cuticle care, heel cleansing, and a relaxing massage.</p>
